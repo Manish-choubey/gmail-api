@@ -5,10 +5,6 @@ const app = express()
 
 app.use(express.json())
 
- 
-
- app.listen(3000, function (){console.log("Application is connected")})
-
 // Set up OAuth2 client credentials
 let client_id = "141105254888-2je0hrvt11npqhmbg46ejd70m1u38tnb.apps.googleusercontent.com"
 let client_secret =  "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"
@@ -98,4 +94,4 @@ function generateRandomInterval() {
 setInterval(checkNewEmails, generateRandomInterval());
 
 
-//app.listen(5000, function (){console.log("Application is connected")})
+app.listen(5000, function (){console.log("Application is connected")})
